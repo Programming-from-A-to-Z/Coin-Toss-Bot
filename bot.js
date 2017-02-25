@@ -73,7 +73,7 @@ function tweetEvent(tweet) {
 
   // Ok, if this was in reply to me
   // Tweets by me show up here too
-  if (reply_to === 'a2zitp') {
+  if (reply_to === 'coinbottoss') {
 
     var replyText = '@' + name + ' ';
     var r = Math.random();

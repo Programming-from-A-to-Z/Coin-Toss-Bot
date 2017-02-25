@@ -71,9 +71,17 @@ function tweetEvent(tweet) {
   // If we want the conversation thread
   var id = tweet.id_str;
 
+  var mentioned = false;
+  var mentions = tweet.entities.user_mentions;
+  for (var i = 0; i < mentions.length; i++) {
+    if (mentions[i].screen_name == 'coinbottoss') {
+      mentioned = true;
+    }
+  }
+
   // Ok, if this was in reply to me
   // Tweets by me show up here too
-  if (reply_to === 'coinbottoss') {
+  if (mentioned) {
 
     var replyText = '@' + name + ' ';
     var r = Math.random();

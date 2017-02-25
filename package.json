@@ -1,5 +1,5 @@
 {
-  "name": "Coin Toss Bot",
+  "name": "CoinTossBot",
   "version": "1.0.0",
   "description": "Twitter Bot Example",
   "main": "bot.js",
